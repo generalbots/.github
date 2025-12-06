@@ -1,6 +1,10 @@
-# General Bots
+<a href="https://github.com/generalbots/botserver/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=generalbots/botserver" />
+</a>
 
 ![General Bots Logo](https://github.com/GeneralBots/BotServer/blob/main/logo.png?raw=true)
+
+# General Bots
 
 **Enterprise-Grade LLM Orchestrator and AI Automation Platform**
 
@@ -90,14 +94,6 @@ cargo run
 ## License
 
 **AGPL-3.0** - True open source with dual licensing option.
-
----
-
-## Contributing
-
-<a href="https://github.com/generalbots/botserver/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=generalbots/botserver" />
-</a>
 
 ---
 
