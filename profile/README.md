@@ -2,7 +2,7 @@
   <img src="https://contrib.rocks/image?repo=generalbots/botserver" />
 </a>
 
-![General Bots Logo](https://github.com/GeneralBots/BotServer/blob/main/logo.png?raw=true)
+![General Bots Logo](https://github.com/GeneralBots/botserver/blob/main/logo.png?raw=true)
 
 # General Bots
 
@@ -37,11 +37,12 @@ A strongly-typed, self-hosted conversational platform focused on convention over
 
 | Repository | Description | Status |
 |------------|-------------|--------|
-| [**BotServer**](https://github.com/GeneralBots/BotServer) | Core API server - LLM orchestration, automation, integrations | Production |
+| [**botserver**](https://github.com/GeneralBots/botserver) | Core API server - LLM orchestration, automation, integrations | Production |
 | [**botui**](https://github.com/GeneralBots/botui) | Pure web UI - HTMX-based interface suite and minimal | Production |
 | [**botapp**](https://github.com/GeneralBots/botapp) | Tauri desktop wrapper - native file access, system tray | Production |
 | [**botlib**](https://github.com/GeneralBots/botlib) | Shared Rust library - common types, HTTP client, utilities | Production |
-| [**BotBook**](https://github.com/GeneralBots/BotBook) | Documentation - mdBook format, multi-language | Production |
+| [**bottemplates**](https://github.com/GeneralBots/bottemplates) | Templates - bots, apps, prompts, UI components | Production |
+| [**botbook**](https://github.com/GeneralBots/botbook) | Documentation - mdBook format, multi-language | Production |
 
 ---
 
@@ -55,8 +56,8 @@ A strongly-typed, self-hosted conversational platform focused on convention over
 ### Run the Server
 
 ```bash
-git clone https://github.com/GeneralBots/BotServer
-cd BotServer
+git clone https://github.com/GeneralBots/botserver
+cd botserver
 cargo run
 ```
 
@@ -85,9 +86,9 @@ cargo run
 
 ## Documentation
 
-- [Complete Docs](https://github.com/GeneralBots/BotBook)
-- [Quick Start](https://github.com/GeneralBots/BotServer/blob/main/docs/QUICK_START.md)
-- [API Reference](https://github.com/GeneralBots/BotServer/blob/main/docs/src/chapter-10-api/README.md)
+- [Complete Docs](https://github.com/GeneralBots/botbook)
+- [Quick Start](https://github.com/GeneralBots/botserver/blob/main/docs/QUICK_START.md)
+- [API Reference](https://github.com/GeneralBots/botserver/blob/main/docs/src/chapter-10-api/README.md)
 
 ---
 
