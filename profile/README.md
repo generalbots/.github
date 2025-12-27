@@ -12,6 +12,18 @@ A strongly-typed, self-hosted conversational platform focused on convention over
 
 ---
 
+## Architecture
+
+![General Bots Architecture](architecture.svg)
+
+---
+
+## Platform Data Flow
+
+![General Bots Platform](platform.svg)
+
+---
+
 ## Repository Structure
 
 The **[gb](https://github.com/GeneralBots/gb)** repository is the root monorepo containing all components as Git submodules:
@@ -72,27 +84,6 @@ git submodule foreach git pull origin master
 | [**botmodels**](https://github.com/GeneralBots/botmodels) | AI models | Production |
 | [**botplugin**](https://github.com/GeneralBots/botplugin) | Plugin system | Production |
 | [**bottemplates**](https://github.com/GeneralBots/bottemplates) | Templates - bots, apps, prompts | Production |
-
----
-
-## Architecture
-
-```
-                          General Bots Platform                           
-                                                                         
-    +-----------+    +-----------+    +-----------+                
-    |  botapp   |    |  botui    |    | botserver |                
-    |  Tauri    |--->| Pure Web  |--->|   API     |                
-    |  Desktop  |    | HTMX/HTML |    |   Rust    |                
-    +-----------+    +-----------+    +-----+-----+                
-                                            |                       
-                               +------------+------------+           
-                               |                         |           
-                         +-----v-----+            +------v-----+     
-                         |  botlib   |            |  botbook   |     
-                         |  Shared   |            |    Docs    |     
-                         +-----------+            +------------+     
-```
 
 ---
 
