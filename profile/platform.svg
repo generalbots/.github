@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 550">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0d1117"/>
       <stop offset="100%" style="stop-color:#161b22"/>
     </linearGradient>
-    <linearGradient id="appGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="uiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#a371f7"/>
       <stop offset="100%" style="stop-color:#8957e5"/>
     </linearGradient>
-    <linearGradient id="uiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#79c0ff"/>
       <stop offset="100%" style="stop-color:#58a6ff"/>
     </linearGradient>
@@ -20,11 +20,19 @@
       <stop offset="0%" style="stop-color:#f78166"/>
       <stop offset="100%" style="stop-color:#da6d53"/>
     </linearGradient>
-    <linearGradient id="docsGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="aiGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d2a8ff"/>
+      <stop offset="100%" style="stop-color:#bc8cff"/>
+    </linearGradient>
+    <linearGradient id="infraGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" style="stop-color:#7ee787"/>
       <stop offset="100%" style="stop-color:#56d364"/>
     </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <linearGradient id="channelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffa657"/>
+      <stop offset="100%" style="stop-color:#f0883e"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="2" dy="3" stdDeviation="4" flood-opacity="0.4"/>
     </filter>
     <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
@@ -33,85 +41,121 @@
   </defs>
 
   <!-- Background -->
-  <rect width="800" height="450" fill="url(#bgGrad)"/>
+  <rect width="900" height="550" fill="url(#bgGrad)"/>
 
   <!-- Title -->
-  <text x="400" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="bold" fill="#ffffff">General Bots Platform</text>
-  <text x="400" y="62" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e">Data Flow Architecture</text>
+  <text x="450" y="38" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="bold" fill="#ffffff">General Bots Platform</text>
+  <text x="450" y="58" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#8b949e">Cargo Workspace Data Flow · 57 Crates</text>
 
   <!-- Top Layer - Client Apps -->
+
   <!-- botapp -->
   <g filter="url(#shadow)">
-    <rect x="60" y="100" width="160" height="90" rx="10" fill="url(#appGrad)"/>
-    <text x="140" y="135" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">botapp</text>
-    <text x="140" y="158" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#e2d5f7">Tauri Desktop</text>
-    <text x="140" y="178" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#d2a8ff">Native • System Tray</text>
+    <rect x="50" y="85" width="145" height="80" rx="10" fill="url(#uiGrad)"/>
+    <text x="122" y="118" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#ffffff">botapp</text>
+    <text x="122" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#e2d5f7">Tauri Desktop</text>
+    <text x="122" y="156" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#d2a8ff">Native · System Tray</text>
   </g>
 
   <!-- botui -->
   <g filter="url(#shadow)">
-    <rect x="260" y="100" width="160" height="90" rx="10" fill="url(#uiGrad)"/>
-    <text x="340" y="135" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">botui</text>
-    <text x="340" y="158" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#cae8ff">Pure Web UI</text>
-    <text x="340" y="178" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#a5d6ff">HTMX • HTML • CSS</text>
+    <rect x="215" y="85" width="145" height="80" rx="10" fill="url(#webGrad)"/>
+    <text x="287" y="118" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#0d1117">botui</text>
+    <text x="287" y="140" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#1a1a2e">Web UI</text>
+    <text x="287" y="156" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#1a1a2e">HTMX · HTML · CSS</text>
   </g>
 
-  <!-- Arrow from botapp to botui -->
-  <path d="M 220 145 L 250 145" stroke="#58a6ff" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-  <text x="235" y="138" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8b949e">wraps</text>
+  <!-- Arrow botapp → botui -->
+  <path d="M 195 125 L 210 125" stroke="#58a6ff" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="202" y="118" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="7" fill="#8b949e">wraps</text>
 
-  <!-- Arrow from botui to botserver -->
-  <path d="M 420 145 L 450 145" stroke="#58a6ff" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-  <text x="435" y="138" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8b949e">HTTP</text>
+  <!-- Channels box -->
+  <g filter="url(#shadow)">
+    <rect x="380" y="85" width="170" height="80" rx="10" fill="url(#channelGrad)"/>
+    <text x="465" y="115" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="16" font-weight="bold" fill="#0d1117">Channels</text>
+    <text x="465" y="137" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#1a1a2e">WhatsApp · MS Teams</text>
+    <text x="465" y="151" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#1a1a2e">Telegram · Instagram · Email</text>
+  </g>
+
+  <!-- Arrows to botserver -->
+  <path d="M 287 165 L 287 185 L 550 185 L 550 200" stroke="#58a6ff" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <text x="420" y="180" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8b949e">HTTP</text>
+  <path d="M 122 165 L 122 195 L 550 195 L 550 200" stroke="#58a6ff" stroke-width="1.5" fill="none" stroke-dasharray="4,2"/>
+  <path d="M 465 165 L 465 185 L 550 185" stroke="#ffa657" stroke-width="2" fill="none"/>
+  <text x="508" y="180" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#8b949e">webhooks</text>
 
   <!-- botserver -->
   <g filter="url(#shadow)">
-    <rect x="460" y="100" width="180" height="90" rx="10" fill="url(#serverGrad)"/>
-    <text x="550" y="135" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">botserver</text>
-    <text x="550" y="158" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#d1fae5">Core API Server</text>
-    <text x="550" y="178" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#7ee787">Rust • LLM • Automation</text>
+    <rect x="430" y="210" width="240" height="90" rx="12" fill="url(#serverGrad)"/>
+    <text x="550" y="248" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="bold" fill="#ffffff">botserver</text>
+    <text x="550" y="272" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#d1fae5">Core API Server</text>
+    <text x="550" y="290" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#7ee787">Rust · LLM Orchestration · Automation · Routing</text>
   </g>
 
-  <!-- Middle Layer Arrow -->
-  <path d="M 550 190 L 550 230" stroke="#58a6ff" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <!-- Business Apps arrow -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="215" width="160" height="80" rx="8" fill="#f78166"/>
+    <text x="130" y="248" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Business Apps</text>
+    <text x="130" y="268" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#ffddd2">Attendance · Billing · Calendar</text>
+    <text x="130" y="280" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#ffddd2">Contacts · Products · Tickets</text>
+  </g>
+  <path d="M 210 255 L 425 255" stroke="#f78166" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
 
-  <!-- Connection hub -->
-  <circle cx="550" cy="260" r="25" fill="#21262d" stroke="#30363d" stroke-width="2"/>
-  <text x="550" y="265" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8b949e">uses</text>
+  <!-- Productivity arrow -->
+  <g filter="url(#shadow)">
+    <rect x="50" y="310" width="160" height="55" rx="8" fill="#79c0ff"/>
+    <text x="130" y="335" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="bold" fill="#0d1117">Productivity</text>
+    <text x="130" y="353" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="8" fill="#1a1a2e">Knowledge · Workflow · AI Assist</text>
+  </g>
+  <path d="M 210 337 L 430 337" stroke="#79c0ff" stroke-width="1.5" fill="none" stroke-dasharray="4,2"/>
 
-  <!-- Arrows to bottom layer -->
-  <path d="M 525 275 L 390 320" stroke="#58a6ff" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
-  <path d="M 575 275 L 650 320" stroke="#58a6ff" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <!-- Arrow from botserver down -->
+  <path d="M 500 300 L 350 340" stroke="#f78166" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 550 300 L 550 350" stroke="#a371f7" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <path d="M 600 300 L 750 340" stroke="#7ee787" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
 
-  <!-- Bottom Layer -->
   <!-- botlib -->
   <g filter="url(#shadow)">
-    <rect x="260" y="320" width="180" height="90" rx="10" fill="url(#libGrad)"/>
-    <text x="350" y="355" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#ffffff">botlib</text>
-    <text x="350" y="378" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#ffddd2">Shared Library</text>
-    <text x="350" y="398" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#ffa28b">Types • HTTP • Utils</text>
+    <rect x="230" y="370" width="180" height="80" rx="10" fill="url(#libGrad)"/>
+    <text x="320" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="bold" fill="#ffffff">botlib</text>
+    <text x="320" y="428" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#ffddd2">Shared Library</text>
+    <text x="320" y="443" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#ffa28b">Types · HTTP · Utils · Config</text>
   </g>
 
-  <!-- botbook -->
+  <!-- AI & Search -->
   <g filter="url(#shadow)">
-    <rect x="500" y="320" width="180" height="90" rx="10" fill="url(#docsGrad)"/>
-    <text x="590" y="355" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="bold" fill="#0d1117">botbook</text>
-    <text x="590" y="378" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#1a4721">Documentation</text>
-    <text x="590" y="398" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#196c2e">mdBook • Guides</text>
+    <rect x="440" y="370" width="180" height="80" rx="10" fill="url(#aiGrad)"/>
+    <text x="530" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="bold" fill="#0d1117">AI &amp; Search</text>
+    <text x="530" y="428" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#1a1a2e">botllm · botqdrant · botsearch</text>
+    <text x="530" y="443" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#1a1a2e">botresearch · botmultimodal · botkb</text>
   </g>
 
-  <!-- External Services Box -->
+  <!-- Infrastructure -->
+  <g filter="url(#shadow)">
+    <rect x="650" y="370" width="180" height="80" rx="10" fill="url(#infraGrad)"/>
+    <text x="740" y="405" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="17" font-weight="bold" fill="#0d1117">Infrastructure</text>
+    <text x="740" y="428" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#1a4721">Store · Cache · Queue · Net</text>
+    <text x="740" y="443" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#1a4721">Log · Metrics · Deployment</text>
+  </g>
+
+  <!-- External Services -->
   <g>
-    <rect x="680" y="100" width="100" height="90" rx="8" fill="none" stroke="#30363d" stroke-width="2" stroke-dasharray="5,3"/>
-    <text x="730" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#8b949e">External</text>
-    <text x="730" y="148" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6e7681">OpenAI</text>
-    <text x="730" y="162" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6e7681">Anthropic</text>
-    <text x="730" y="176" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6e7681">Groq</text>
+    <rect x="740" y="85" width="120" height="160" rx="8" fill="none" stroke="#30363d" stroke-width="2" stroke-dasharray="5,3"/>
+    <text x="800" y="110" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#8b949e">External</text>
+    <text x="800" y="130" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6e7681">OpenAI</text>
+    <text x="800" y="146" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6e7681">Anthropic</text>
+    <text x="800" y="162" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6e7681">Groq</text>
+    <text x="800" y="178" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6e7681">Ollama</text>
+    <text x="800" y="194" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6e7681">Qdrant</text>
+    <text x="800" y="210" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6e7681">WhatsApp API</text>
+    <text x="800" y="226" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#6e7681">Telegram API</text>
   </g>
-
-  <!-- Arrow to External -->
-  <path d="M 640 145 L 670 145" stroke="#30363d" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="4,2"/>
+  <path d="M 670 255 L 735 200" stroke="#30363d" stroke-width="1.5" fill="none" marker-end="url(#arrowhead)" stroke-dasharray="4,2"/>
+  <path d="M 620 405 L 735 310" stroke="#30363d" stroke-width="1" fill="none" stroke-dasharray="3,3"/>
 
   <!-- Footer -->
-  <text x="400" y="435" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#30363d">Code Name: Guaribas • AGPL-3.0</text>
+  <text x="450" y="500" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#30363d">Code Name: Guaribas · AGPL-3.0 · cargo build —workspace</text>
+
+  <!-- Core crate count badge -->
+  <text x="450" y="520" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#484f58">Core 9 · Channels 6 · AI 6 · Business 10 · Productivity 10 · Infrastructure 14 · UI 2</text>
 </svg>
