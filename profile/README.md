@@ -2,7 +2,7 @@
 <img src="https://contrib.rocks/image?repo=generalbots/generalbots" />
 </a>
 
-![General Bots Logo](https://github.com/GeneralBots/botserver/blob/main/logo.png?raw=true)
+![General Bots Logo](https://github.com/GeneralBots/generalbots/blob/main/logo.png?raw=true)
 
 # General Bots
 
