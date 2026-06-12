@@ -1,9 +1,12 @@
+
+<center>
+<img src="https://generalbots.org/icons/general-bots-text.svg" />
+</center>
+
+
 <a href="https://github.com/generalbots/generalbots/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=generalbots/generalbots" />
 </a>
-
-<img src="https://generalbots.org/general-bots-text.svg" />
-
 # General Bots
 
 **Enterprise-Grade LLM Orchestrator and AI Automation Platform**
