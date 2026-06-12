@@ -2,7 +2,7 @@
 <img src="https://contrib.rocks/image?repo=generalbots/generalbots" />
 </a>
 
-<img src="https://generalbots.org/logo-square-text.svg" />
+<img src="https://generalbots.org/general-bots-text.svg" />
 
 # General Bots
 
